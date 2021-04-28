@@ -1,15 +1,13 @@
 import React from "react";
 import "./gerenciador-tarefas.css";
-import { useRoutes } from "hookrouter";
-
-const routes = {
-  "/": () => <ListarTarefa />,
-  "/cadastrar": () => <CadastrarTarefa />,
-  "/atualizar/:id": ({ id }) => <AtualizarTarefa id={id} />,
-};
+import Routes from "./router/routes";
 
 function GerenciadorTarefas() {
-  return useRoutes(routes);
+  return (
+    <div>
+      <Routes />;
+    </div>
+  );
 }
 
 export default GerenciadorTarefas;
