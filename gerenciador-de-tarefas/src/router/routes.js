@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ListarTarefas from "../listarTarefas/listar-tarefas";
-import CadastrarTarefas from "../cadastrarTarefas/cadastrar-tarefas";
-import AtualizarTarefas from "../atualizarTarefas/atualizar-tarefas";
-import Main from "../mainpg/main";
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ListarTarefas from '../listarTarefas/listar-tarefas'
+import CadastrarTarefas from '../cadastrarTarefas/cadastrar-tarefas'
+import AtualizarTarefas from '../atualizarTarefas/atualizar-tarefas'
+import Main from '../mainpg/main'
 
 function Routes() {
   return (
@@ -15,7 +15,7 @@ function Routes() {
         <Route path="/atualizarTarefa/:id" component={AtualizarTarefas} />
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default Routes;
+export default Routes

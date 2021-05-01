@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ListarTarefas() {
-  return <h1>Listagem de tarefa</h1>;
+  return (
+    <div>
+      <Link to="/cadastrarTarefa" className="btn btn-success btn-sm">
+        Nova Tarefa
+      </Link>
+    </div>
+  )
 }
 
-export default ListarTarefas;
+export default ListarTarefas
