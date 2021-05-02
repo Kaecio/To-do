@@ -39,10 +39,11 @@ function CadastrarTarefas() {
             placeholder="Adicione uma tarefa"
             value={tarefa}
             onChange={handleTxgtTarefa}
+            data-testid="txt-tarefa"
           ></input>
 
           <Grid cols="12 3 2" />
-          <IconButton style="primary"></IconButton>
+          <IconButton style="primary" data-testid="btn-cadastrar"></IconButton>
         </div>
       </form>
     </div>
